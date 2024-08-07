@@ -1,0 +1,8 @@
+question,optionA,optionB,optionC,optionD,optionE,correct
+Which HTML tag is used to create an ordered list?,'<ul>','<ol>','<li>','<table>','<img>',B
+Which HTML tag is used to define a table row?,'<td>','<tr>','<th>','<table>','<video>',B
+What is the purpose of a navigation bar on a website?, To display images,To provide links to other pages,To create a list of items,To show data in a table,To create an image,B
+Which tag is used to create a link in HTML?,'<link>','<href>','<a>','<nav>','<src>',C
+What tag is used for each item in an unordered list?,'<ul>','<li>','<ol>','<items>','<a>',B
+In a table which tag is used to define a cell that contains data?,'<tr>','<th>','<td>','<table>','<chello>',C
+Which of the following can be used to style a navigation bar in HTML?,'<style>','<css>',inline CSS,All of the above,None of the Above,D

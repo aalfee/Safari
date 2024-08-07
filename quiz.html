@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="gif-container">
+        <img id="gif" src="confetti.gif" alt="Animation">
+    </div>
+    <div class="quiz-container">
+      <h1>Quiz</h1>
+      <div class="question-container"></div>
+      <form id="quiz-form">
+        <div class="form-answer">
+          <label for="Answer">Choose an answer: </label><br />
+          <button class="answer-button" data-answer="A">A</button><br />
+          <button class="answer-button" data-answer="B">B</button><br />
+          <button class="answer-button" data-answer="C">C</button><br />
+          <button class="answer-button" data-answer="D">D</button><br />
+          <button class="answer-button" data-answer="E">E</button><br />
+        </div>
+        <input type="hidden" name="selected-answer" id="selected-answer" />
+    </form>
+      <div id="result"></div>
+    </div>
+    <audio id="correct-sound" src="horn.wav"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>

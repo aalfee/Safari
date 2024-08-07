@@ -1,12 +1,33 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Heading styles */
 h1 {
     color: #ff6a00;
     background-color: white;
     text-align: center;
+    margin: 0;
+    padding: 20px;
+    border-radius: 8px;
 }
+
+/* Image styles */
 img {
-     position: absolute;
-     left: 10px;
+    position: absolute;
+    left: 10px;
 }
+
+/* White text block */
 .white-text {
     display: inline-block;
     border-radius: 5px;
@@ -15,7 +36,10 @@ img {
     background-color: #ff6a00;
     border: 5px solid white;
     color: white;
+    padding: 5px 10px;
 }
+
+/* Welcome section */
 #welcome {
     color: white;
     margin: 200px;
@@ -24,48 +48,61 @@ img {
     align-items: center;
     gap: 20px;
 }
+
+/* Navigation */
 #nav {
     z-index: 1;
 }
 
-#camplocation {
+/* Location styles */
+#camplocation,
+#mountainlocation,
+#towerlocation,
+#townlocation,
+#lagoonlocation {
     position: absolute;
+}
+
+#camplocation {
     top: 100px;
     left: 930px;
 }
 
 #mountainlocation {
-    position: absolute;
     top: 300px;
     left: 650px;
 }
 
 #towerlocation {
-    position: absolute;
     top: 500px;
     left: 420px;
 }
 
 #townlocation {
-    position: absolute;
     top: 500px;
     left: 1020px;
 }
+
 #lagoonlocation {
-    position: absolute;
     top: 100px;
     left: 400px;
 }
+
+/* Data section */
 #data {
     font-size: 20px;
+    text-align: center;
 }
+
+/* Table styles */
 table {
     width: 50%;
     border-collapse: collapse;
     margin: 20px auto;
 }
 
-th, td {
+th,
+td {
     border: 1px solid #000;
     padding: 8px;
     text-align: left;
@@ -73,4 +110,88 @@ th, td {
 
 th {
     background-color: #f2f2f2;
+}
+
+/* Form answer section */
+.form-answer {
+    margin-bottom: 20px;
+}
+
+/* Answer buttons */
+.answer-button {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.answer-button:hover {
+    background-color: #e0e0e0;
+}
+
+/* Next button */
+#next-button {
+    display: none; /* Initially hidden */
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+#next-button:hover {
+    background-color: #0056b3;
+}
+
+/* Result display */
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: #333;
+}
+
+/* Quiz container */
+.quiz-container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 10;
+}
+
+/* Confetti canvas */
+#confettiCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0; /* Behind quiz elements */
+}
+#gif-container {
+    display: none; /* Hide GIF initially */
+    text-align: center;
+
+}
+#gif {
+    position: absolute;
+    top: -100px;
+    max-width: 100%; /* Adjust GIF size if needed */
+    height: 1920px;
 }
