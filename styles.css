@@ -1,0 +1,76 @@
+h1 {
+    color: #ff6a00;
+    background-color: white;
+    text-align: center;
+}
+img {
+     position: absolute;
+     left: 10px;
+}
+.white-text {
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #ff6a00;
+    border: 5px solid white;
+    color: white;
+}
+#welcome {
+    color: white;
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+#nav {
+    z-index: 1;
+}
+
+#camplocation {
+    position: absolute;
+    top: 100px;
+    left: 930px;
+}
+
+#mountainlocation {
+    position: absolute;
+    top: 300px;
+    left: 650px;
+}
+
+#towerlocation {
+    position: absolute;
+    top: 500px;
+    left: 420px;
+}
+
+#townlocation {
+    position: absolute;
+    top: 500px;
+    left: 1020px;
+}
+#lagoonlocation {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+}
+#data {
+    font-size: 20px;
+}
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
