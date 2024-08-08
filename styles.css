@@ -1,30 +1,47 @@
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: url(safariBackG.jpg);
+    background-position: center; /* Center the background image */
+    background-size: cover; /* Cover the entire viewport */
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    overflow: hidden;
+    flex-direction: column; /* Stack children vertically */
 }
 
-/* Heading styles */
+/* Header styles */
+header {
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(255, 223, 191, 0.8); /* Semi-transparent background */
+}
+
+footer {
+    display: flex;
+    margin-top: 500px;
+    margin-left: 1300px;
+}
+
 h1 {
     color: #ff6a00;
     background-color: white;
-    text-align: center;
     margin: 0;
     padding: 20px;
     border-radius: 8px;
 }
 
-/* Image styles */
-img {
-    position: absolute;
-    left: 10px;
+/* Welcome section */
+#welcome {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 
 /* White text block */
@@ -32,66 +49,57 @@ img {
     display: inline-block;
     border-radius: 5px;
     font-size: 30px;
-    font-family: Arial, sans-serif;
     background-color: #ff6a00;
     border: 5px solid white;
     color: white;
     padding: 5px 10px;
+    margin-bottom: 20px; /* Space below the heading */
 }
 
-/* Welcome section */
-#welcome {
-    color: white;
-    margin: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+/* Image styles */
+img {
+    margin-bottom: 20px; /* Space below the image */
+    border-radius: 5px;
+    filter: drop-shadow(0 0 15px rgba(255, 100, 255, 1.0)); /* White shadow */
 }
 
-/* Navigation */
-#nav {
-    z-index: 1;
+/* Tooltip styles */
+.tooltip-container {
+    width: 100%;
+    position: relative;
+    display: inline-block;
 }
 
-/* Location styles */
-#camplocation,
-#mountainlocation,
-#towerlocation,
-#townlocation,
-#lagoonlocation {
+.tooltip-container:hover .tooltip {
+    display: block;
+}
+.tooltip {
+    display: none;
     position: absolute;
-}
-
-#camplocation {
-    top: 100px;
-    left: 930px;
-}
-
-#mountainlocation {
-    top: 300px;
-    left: 650px;
-}
-
-#towerlocation {
-    top: 500px;
-    left: 420px;
-}
-
-#townlocation {
-    top: 500px;
-    left: 1020px;
-}
-
-#lagoonlocation {
-    top: 100px;
-    left: 400px;
+    bottom: 100%; /* Position above the container */
+    left: 100%;
+    transform: translateX(-50%); /* Center horizontally */
+    width: 100%; /* Make tooltip take full width of the container */
+    max-width: 100%;
+    padding: 50px; /* Space inside the tooltip */
+    background-color: #333; /* Background color of tooltip */
+    color: white; /* Text color */
+    border-radius: 8px; /* Rounded corners */
+    white-space: normal; /* Allow text to wrap */
+    text-align: left; /* Align text to the left */
+    box-shadow: 0 10px 6px rgba(0, 0, 0, 0.1); /* Shadow for better visibility */
+    box-sizing: content-box; /* Include padding in width calculation */
+    z-index: 1;
 }
 
 /* Data section */
 #data {
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+    padding: 20px; /* Space around the content */
 }
 
 /* Table styles */
@@ -101,16 +109,30 @@ table {
     margin: 20px auto;
 }
 
-th,
 td {
+    color: white;
     border: 1px solid #000;
     padding: 8px;
     text-align: left;
 }
 
 th {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
     background-color: #f2f2f2;
 }
+
+ol {
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    background-color: #f9f9f9; /* Background color */
+    border: 1px solid #ddd; /* Border color and width */
+    color: #000000; /* Text color */
+    padding: 50px; /* Space inside the list */
+    margin: 20px; /* Space outside the list */
+}
+
 
 /* Form answer section */
 .form-answer {
@@ -184,14 +206,49 @@ th {
     pointer-events: none;
     z-index: 0; /* Behind quiz elements */
 }
+
 #gif-container {
     display: none; /* Hide GIF initially */
     text-align: center;
-
 }
+
 #gif {
     position: absolute;
     top: -100px;
     max-width: 100%; /* Adjust GIF size if needed */
     height: 1920px;
+}
+
+#townlocation {
+    position: absolute;
+}
+
+#camplocation {
+    position: absolute;
+    top: 100px;
+    left: 930px;
+}
+
+#mountainlocation {
+    position: absolute;
+    top: 300px;
+    left: 650px;
+}
+
+#towerlocation {
+    position: absolute;
+    top: 450px;
+    left: 420px;
+}
+
+#townlocation {
+    position: absolute;
+    top: 500px;
+    left: 1020px;
+}
+
+#lagoonlocation {
+    position: absolute;
+    top: 100px;
+    left: 400px;
 }

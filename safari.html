@@ -1,21 +1,22 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Safari Adventure</title>
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <style>
-            body {
-                background-image: url(safariBackG.jpg);
-            }
-        </style>
-        <header> 
-            <h1>Welcome to your Safari Adventure!</h1>
-        </header>
-        <section id="welcome">
-            <h2 class="white-text">Click the map to open</h2>
-            <a href="map.html"><img src="map.png"></a>
-        </section>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safari Adventure</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header> 
+        <h1>Welcome to your Safari Adventure!</h1>
+    </header>
+    <section id="welcome">
+        <h2 class="white-text">Click the map to open</h2>
+        <a href="map.html"><img src="map.png" alt="Map"></a>
+        <div class="tooltip-container">
+            <button class="hover-button">Hover me!</button>
+            <div class="tooltip"><p>To create a clickable image that navigates to another file or <br>page when clicked, you use the HTML<b> < a > </b>tag in combination with <br> the <b>< img ></b> tag. Start by wrapping the <b> < img > </b>tag inside <br> an <b> < a > </b>tag. The <b>< a ></b> tag, or anchor tag, is used to define <br> a hyperlink, and the href attribute specifies the target <br>URL or file path where the user will be redirected upon <br>clicking the image (This case: "map.html").</p></div>
+        </div>
+</section>
+</body>
 </html>
